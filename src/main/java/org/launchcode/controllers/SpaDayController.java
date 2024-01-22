@@ -63,6 +63,9 @@ public class SpaDayController {
             }
         }
 
+        model.addAttribute("appropriateFacials", appropriateFacials);
+        model.addAttribute("name", name);
+
         return "menu";
     }
 }
