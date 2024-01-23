@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spa Day</title>
+</head>
+<body>
+    <a th:href="@{'/'}">Choose Your Service!</a>
+    <th:block th:each="user : ${users}"></th:block>
+        <h1 th:text="${user.getUserName()}"></h1>
+        <h2 th:text="${user.getEmail()}"></h2>
+
+</body>
+</html>
